@@ -1,58 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>hashfront.com</title>
-  
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="http://hashfront.com/"/>
-  <updated>2017-05-10T05:37:00.000Z</updated>
-  <id>http://hashfront.com/</id>
-  
-  <author>
-    <name>dalgos</name>
-    
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>oh-my-zsh 커맨드 자동완성 플러그인 설치하기</title>
-    <link href="http://hashfront.com/2017/05/10/omz-auto-command/"/>
-    <id>http://hashfront.com/2017/05/10/omz-auto-command/</id>
-    <published>2017-05-10T05:37:00.000Z</published>
-    <updated>2017-05-10T05:37:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>팀 내 주력 shell 로 <strong>zsh</strong>을 사용중입니다. 포함되어 있는 기본기능들이 충실하고, 속도 저하등도 아직까지는 체감하지 못하고 있습니다. 기본기가 충실한 zsh임에도 유용한 플러그인들이 제법 많은데, 이번에 설치한 플러그인은 <strong>auto suggestions</strong>을 지원해주는 <strong>zsh-autosuggestions</strong> 입니다.</p>
-<p>이 플러그인은 자주 사용하는 커맨드를 추천 및 제시해주어 반복되는 불필요한 입력을 최소화하는데 도움을 줍니다.</p>
-<p><a href="https://github.com/zsh-users/zsh-autosuggestions" target="_blank" rel="external">git@zsh-autosuggestion</a></p>
-<p>zsh 기본 사용시 설치방법은 위 저장소에 잘 설명되어 있으므로, 여기서는 oh-my-zsh를 사용하는 경우에 대한 설치 방법만 설명합니다.</p>
-<p>일단 해당 플러그인을 clone 합니다. 설치 폴더는 oh-my-zsh의 plugins 폴더를 사용하겠습니다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions</div></pre></td></tr></table></figure></p>
-<p>이제 플러그인을 사용하도록 .zshrc 파일을 편집합니다. ($ZSH는 ~/.oh-my-zsh 를 바라봅니다.)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">source</span>=(zsh-autosuggestions)</div></pre></td></tr></table></figure></p>
-<p>이제 편집한 내용을 적용합니다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">source</span> ~/.zshrc</div></pre></td></tr></table></figure></p>
-<p>이제 커맨드 작성시 기존에 사용했던 커맨드가 자동완성되어 추천되어 나옵니다. 자주 사용하는 커맨드를 매번 입력하는 수고로움을 극복할 수 있게 되었습니다. :-)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/Document/GIT/</div></pre></td></tr></table></figure>
-<p>삭제하실 때는 .zshrc 에서 추가했던 플러그인 적용 내용을 삭제하고, plugins 폴더의 zsh-autosuggestions 폴더를 삭제하시면 됩니다.</p>
-<p>끝.</p>
-<p>본 글은 <a href="http://blog.wavejs.io/zshe-keomaendeu-jadongwanseong-peulreogeuin-seolcihagi/" target="_blank" rel="external">wavejs</a> 그룹에도 포스팅되었습니다.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;팀 내 주력 shell 로 &lt;strong&gt;zsh&lt;/strong&gt;을 사용중입니다. 포함되어 있는 기본기능들이 충실하고, 속도 저하등도 아직까지는 체감하지 못하고 있습니다. 기본기가 충실한 zsh임에도 유용한 플러그인들이 제법 많은데, 이번에 설치한
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Curry</title>
-    <link href="http://hashfront.com/2017/05/10/Curry/"/>
-    <id>http://hashfront.com/2017/05/10/Curry/</id>
-    <published>2017-05-10T03:59:48.000Z</published>
-    <updated>2017-05-10T04:00:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Curry-Currying"><a href="#Curry-Currying" class="headerlink" title="Curry? Currying?"></a>Curry? Currying?</h1><blockquote>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Curry · hashfront.com</title><meta name="description" content="Curry - dalgos"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://hashfront.com/atom.xml" title="hashfront.com"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/dalgos" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Curry</h1><div class="post-info">May 10, 2017</div><div class="post-content"><h1 id="Curry-Currying"><a href="#Curry-Currying" class="headerlink" title="Curry? Currying?"></a>Curry? Currying?</h1><blockquote>
 <p><strong>n</strong>개의 매개변수를 참조하는 함수를 하나의 매개변수를 참조하는 <strong>n</strong>개의 함수로 분리, 구현하는 것.</p>
 </blockquote>
 <p>저는 다뤄본 적은 없지만 Haskell, Scala의 기본 요소라고 하는군요. Javascript에는 Currying이 기본 탑재되어 있지 않으므로 기능적 트릭을 이용해 구현해야합니다.</p>
@@ -74,16 +20,12 @@
 <p>이제 curry 함수를 이용해서 함수를 currying 형태로 만들어봅니다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> mixDomsCurried = curry(mixDoms);</div><div class="line">mixDomsCurried(<span class="string">'&lt;a/&gt;'</span>)(<span class="string">'&lt;p/&gt;'</span>);</div></pre></td></tr></table></figure>
 <p>-끝-</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Curry-Currying&quot;&gt;&lt;a href=&quot;#Curry-Currying&quot; class=&quot;headerlink&quot; title=&quot;Curry? Currying?&quot;&gt;&lt;/a&gt;Curry? Currying?&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;stro
-    
-    </summary>
-    
-    
-  </entry>
-  
-</feed>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/05/10/omz-auto-command/" class="prev">PREV</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'bbss-me';
+var disqus_identifier = '2017/05/10/Curry/';
+var disqus_title = 'Curry';
+var disqus_url = 'http://hashfront.com/2017/05/10/Curry/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//bbss-me.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://hashfront.com">dalgos</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-98822060-1",'auto');ga('send','pageview');</script></body></html>
