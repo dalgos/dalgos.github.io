@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>hashfront.com</title>
+  <title>bbss.me</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://hashfront.com/"/>
-  <updated>2017-05-10T05:37:00.000Z</updated>
-  <id>http://hashfront.com/</id>
+  <link href="http://bbss.me/"/>
+  <updated>2017-05-10T15:47:21.000Z</updated>
+  <id>http://bbss.me/</id>
   
   <author>
     <name>dalgos</name>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>oh-my-zsh 커맨드 자동완성 플러그인 설치하기</title>
-    <link href="http://hashfront.com/2017/05/10/omz-auto-command/"/>
-    <id>http://hashfront.com/2017/05/10/omz-auto-command/</id>
+    <link href="http://bbss.me/2017/05/10/omz-auto-command/"/>
+    <id>http://bbss.me/2017/05/10/omz-auto-command/</id>
     <published>2017-05-10T05:37:00.000Z</published>
-    <updated>2017-05-10T05:37:00.000Z</updated>
+    <updated>2017-05-10T15:47:21.000Z</updated>
     
     <content type="html"><![CDATA[<p>팀 내 주력 shell 로 <strong>zsh</strong>을 사용중입니다. 포함되어 있는 기본기능들이 충실하고, 속도 저하등도 아직까지는 체감하지 못하고 있습니다. 기본기가 충실한 zsh임에도 유용한 플러그인들이 제법 많은데, 이번에 설치한 플러그인은 <strong>auto suggestions</strong>을 지원해주는 <strong>zsh-autosuggestions</strong> 입니다.</p>
 <p>이 플러그인은 자주 사용하는 커맨드를 추천 및 제시해주어 반복되는 불필요한 입력을 최소화하는데 도움을 줍니다.</p>
@@ -47,10 +47,10 @@
   
   <entry>
     <title>Curry</title>
-    <link href="http://hashfront.com/2017/05/10/Curry/"/>
-    <id>http://hashfront.com/2017/05/10/Curry/</id>
+    <link href="http://bbss.me/2017/05/10/Curry/"/>
+    <id>http://bbss.me/2017/05/10/Curry/</id>
     <published>2017-05-10T03:59:48.000Z</published>
-    <updated>2017-05-10T04:00:53.000Z</updated>
+    <updated>2017-05-10T14:50:46.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Curry-Currying"><a href="#Curry-Currying" class="headerlink" title="Curry? Currying?"></a>Curry? Currying?</h1><blockquote>
 <p><strong>n</strong>개의 매개변수를 참조하는 함수를 하나의 매개변수를 참조하는 <strong>n</strong>개의 함수로 분리, 구현하는 것.</p>

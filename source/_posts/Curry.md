@@ -3,11 +3,13 @@ title: Curry
 date: 2017-05-10 12:59:48
 tags:
 ---
-# Curry? Currying?
+## Curry? Currying?
 
 > **n**개의 매개변수를 참조하는 함수를 하나의 매개변수를 참조하는 **n**개의 함수로 분리, 구현하는 것.
 
 저는 다뤄본 적은 없지만 Haskell, Scala의 기본 요소라고 하는군요. Javascript에는 Currying이 기본 탑재되어 있지 않으므로 기능적 트릭을 이용해 구현해야합니다.
+
+<!-- more -->
 
 여러개의 매개변수를 참조하는 함수를 하나 만들어봅니다.
 
