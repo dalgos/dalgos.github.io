@@ -25,6 +25,10 @@ bundle exec jekyll serve
 
 ```
 
+## writing posts
+
+https://jekyllrb.com/docs/posts/
+
 ## rvm Installation
 
 ```bash
