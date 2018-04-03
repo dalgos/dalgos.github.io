@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'oror.io',
   },
   plugins: ['gatsby-plugin-react-helmet'],
+  pathPrefix: '/dalgos.github.io'
 };
