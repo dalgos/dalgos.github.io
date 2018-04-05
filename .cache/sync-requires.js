@@ -7,6 +7,7 @@ exports.layouts = {
 }
 
 exports.components = {
+  "component---src-templates-blog-post-js": preferDefault(require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/templates/blog-post.js")),
   "component---cache-dev-404-page-js": preferDefault(require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/404.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/index.js")),
@@ -15,6 +16,7 @@ exports.components = {
 
 exports.json = {
   "layout-index.json": require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/.cache/json/layout-index.json"),
+  "hello-world.json": require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/.cache/json/hello-world.json"),
   "dev-404-page.json": require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/.cache/json/dev-404-page.json"),
   "404.json": require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/.cache/json/404.json"),
   "index.json": require("/Users/kwangs/Documents/GIT/private/dalgos.github.io/.cache/json/index.json"),

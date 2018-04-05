@@ -4,14 +4,15 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import './index.css'
+require("prismjs/themes/prism-solarizedlight.css")
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="oror.io"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'oror.io blog' },
+        { name: 'keywords', content: 'frontend, javascript' },
       ]}
     />
     <Header />

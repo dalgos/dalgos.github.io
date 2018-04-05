@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0353ce8d7cac238d39e2d397181b9cd3",
+        "contentDigest": "787ef5cc087b42f41d600cd6122e5243",
         "owner": "internal-data-bridge"
       }
     },
@@ -240,6 +240,64 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-catch-links": {
+      "resolve": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-plugin-catch-links",
+      "id": "Plugin gatsby-plugin-catch-links",
+      "name": "gatsby-plugin-catch-links",
+      "version": "1.0.19",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onClientEntry"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-plugin-catch-links",
+      "packageJson": {
+        "name": "gatsby-plugin-catch-links",
+        "description": "Intercepts local links from markdown and other non-react pages and does a client-side pushState to avoid the browser having to refresh the page.",
+        "version": "1.0.19",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "74d9eee5159009f99bd5a76a7be80ab9",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin gatsby-plugin-react-helmet": {
       "resolve": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-plugin-react-helmet",
       "id": "Plugin gatsby-plugin-react-helmet",
@@ -314,39 +372,283 @@
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin default-site-plugin": {
-      "resolve": "/Users/kwangs/Documents/GIT/private/dalgos.github.io",
-      "id": "Plugin default-site-plugin",
-      "name": "default-site-plugin",
-      "version": "72c0d37b2bb406acb273b4e25d7d77c3",
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.27",
       "pluginOptions": {
-        "plugins": []
+        "plugins": [],
+        "path": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages",
+        "name": "pages"
       },
-      "nodeAPIs": [],
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io",
+      "pluginFilepath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-source-filesystem",
       "packageJson": {
-        "name": "gatsby-starter-default",
-        "description": "Gatsby default starter",
-        "version": "1.0.0",
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.27",
         "keywords": [
-          "gatsby"
+          "gatsby",
+          "gatsby-plugin"
         ],
         "author": "Kyle Mathews <mathews.kyle@gmail.com>",
         "license": "MIT",
         "dependencies": [
           {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0f0b73d1942acdc8638b3eb8dbf1b91e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "1.7.39",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "1.7.39",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "graphql-type-json",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "hast-util-raw",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^2.4.0"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.14.1"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-remove-position",
+            "version": "^1.1.1"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.20.2"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "764f627ad0eab2779faaa3fdab59d406",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/kwangs/Documents/GIT/private/dalgos.github.io",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "4979db6d1a8ef3de6b00b4c89b1efaf9",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io",
+      "packageJson": {
+        "name": "dalgos.github.io",
+        "description": "Static site",
+        "version": "0.1.0",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "dalgos",
+        "license": "MIT",
+        "dependencies": [
+          {
             "name": "gatsby",
-            "version": "^1.9.241"
+            "version": "^1.9.246"
           },
           {
             "name": "gatsby-link",
             "version": "^1.6.39"
           },
           {
+            "name": "gatsby-plugin-catch-links",
+            "version": "^1.0.19"
+          },
+          {
             "name": "gatsby-plugin-react-helmet",
             "version": "^2.0.8"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "^1.2.23"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.27"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^1.7.39"
           },
           {
             "name": "react-helmet",
@@ -354,6 +656,10 @@
           }
         ],
         "devDependencies": [
+          {
+            "name": "gh-pages",
+            "version": "^1.1.0"
+          },
           {
             "name": "prettier",
             "version": "^1.11.1"
@@ -366,26 +672,331 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ad14eb48e0c6c90ce34af9034b1b57b1",
+        "contentDigest": "ab81e6dd34c8b6b2fa021c3fde758441",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {
-        "title": "Gatsby Default Starter"
+        "title": "oror.io",
+        "author": "dalgos"
       },
       "port": "8000",
       "host": "localhost",
-      "pathPrefix": "",
+      "pathPrefix": "/dalgos.github.io",
       "polyfill": true,
-      "buildTime": "2018-04-03T10:03:49.872Z",
+      "buildTime": "2018-04-05T10:31:27.469Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "0e2d45468d6877577a01e4e7ac3d0a86",
+        "contentDigest": "59e4a0da1445b0653edb760727876ea4",
         "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages absPath of file": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e78736547dff8794059d696cd680a0df",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages",
+      "relativePath": "",
+      "extension": "",
+      "size": 192,
+      "prettySize": "192 B",
+      "modifiedTime": "2018-04-03T10:37:27.019Z",
+      "accessTime": "2018-04-05T10:31:30.686Z",
+      "changeTime": "2018-04-03T10:37:27.019Z",
+      "birthTime": "2018-04-03T09:24:12.244Z",
+      "root": "/",
+      "dir": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src",
+      "base": "pages",
+      "ext": "",
+      "name": "pages",
+      "relativeDirectory": "..",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 6,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8626601751,
+      "blocks": 0,
+      "atimeMs": 1522924290685.812,
+      "mtimeMs": 1522751847019.403,
+      "ctimeMs": 1522751847019.403,
+      "birthtimeMs": 1522747452244.0923,
+      "atime": "2018-04-05T10:31:30.686Z",
+      "mtime": "2018-04-03T10:37:27.019Z",
+      "ctime": "2018-04-03T10:37:27.019Z",
+      "birthtime": "2018-04-03T09:24:12.244Z"
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world absPath of file": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "539b89e05a8f2064b7ca617f9245babf",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world",
+      "relativePath": "04-03-2018-hello-world",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2018-04-03T10:37:32.266Z",
+      "accessTime": "2018-04-05T10:31:30.688Z",
+      "changeTime": "2018-04-03T10:37:32.266Z",
+      "birthTime": "2018-04-03T10:37:27.019Z",
+      "root": "/",
+      "dir": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages",
+      "base": "04-03-2018-hello-world",
+      "ext": "",
+      "name": "04-03-2018-hello-world",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8626680180,
+      "blocks": 0,
+      "atimeMs": 1522924290687.9705,
+      "mtimeMs": 1522751852265.9023,
+      "ctimeMs": 1522751852265.9023,
+      "birthtimeMs": 1522751847019.3926,
+      "atime": "2018-04-05T10:31:30.688Z",
+      "mtime": "2018-04-03T10:37:32.266Z",
+      "ctime": "2018-04-03T10:37:32.266Z",
+      "birthtime": "2018-04-03T10:37:27.019Z"
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/404.js absPath of file": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/404.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "8d50d9a7e3f04ddcc5ff8d43b6effe79",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/404.js",
+      "relativePath": "404.js",
+      "extension": "js",
+      "size": 198,
+      "prettySize": "198 B",
+      "modifiedTime": "2018-04-03T09:24:12.244Z",
+      "accessTime": "2018-04-05T10:29:59.456Z",
+      "changeTime": "2018-04-03T10:03:15.872Z",
+      "birthTime": "2018-04-03T09:24:12.244Z",
+      "root": "/",
+      "dir": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages",
+      "base": "404.js",
+      "ext": ".js",
+      "name": "404",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8626601752,
+      "blocks": 8,
+      "atimeMs": 1522924199456.0203,
+      "mtimeMs": 1522747452244.2222,
+      "ctimeMs": 1522749795871.7388,
+      "birthtimeMs": 1522747452244.1409,
+      "atime": "2018-04-05T10:29:59.456Z",
+      "mtime": "2018-04-03T09:24:12.244Z",
+      "ctime": "2018-04-03T10:03:15.872Z",
+      "birthtime": "2018-04-03T09:24:12.244Z"
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/index.js absPath of file": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "47d6a16bb70f3028972820b8b2936427",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/index.js",
+      "relativePath": "index.js",
+      "extension": "js",
+      "size": 197,
+      "prettySize": "197 B",
+      "modifiedTime": "2018-04-03T10:20:41.427Z",
+      "accessTime": "2018-04-05T10:30:20.305Z",
+      "changeTime": "2018-04-03T10:20:41.427Z",
+      "birthTime": "2018-04-03T09:24:12.244Z",
+      "root": "/",
+      "dir": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8626601754,
+      "blocks": 8,
+      "atimeMs": 1522924220304.661,
+      "mtimeMs": 1522750841427.2898,
+      "ctimeMs": 1522750841427.2898,
+      "birthtimeMs": 1522747452244.415,
+      "atime": "2018-04-05T10:30:20.305Z",
+      "mtime": "2018-04-03T10:20:41.427Z",
+      "ctime": "2018-04-03T10:20:41.427Z",
+      "birthtime": "2018-04-03T09:24:12.244Z"
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/page-2.js absPath of file": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/page-2.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "eda91bb7e277753793f385583265fbf5",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/page-2.js",
+      "relativePath": "page-2.js",
+      "extension": "js",
+      "size": 245,
+      "prettySize": "245 B",
+      "modifiedTime": "2018-04-03T09:24:12.245Z",
+      "accessTime": "2018-04-05T10:29:59.456Z",
+      "changeTime": "2018-04-03T10:03:15.872Z",
+      "birthTime": "2018-04-03T09:24:12.245Z",
+      "root": "/",
+      "dir": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages",
+      "base": "page-2.js",
+      "ext": ".js",
+      "name": "page-2",
+      "relativeDirectory": "",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8626601753,
+      "blocks": 8,
+      "atimeMs": 1522924199456.0398,
+      "mtimeMs": 1522747452244.9504,
+      "ctimeMs": 1522749795872.116,
+      "birthtimeMs": 1522747452244.6855,
+      "atime": "2018-04-05T10:29:59.456Z",
+      "mtime": "2018-04-03T09:24:12.245Z",
+      "ctime": "2018-04-03T10:03:15.872Z",
+      "birthtime": "2018-04-03T09:24:12.245Z"
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file",
+      "children": [
+        "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ac9b43227bb58197553f18888560a610",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md",
+      "relativePath": "04-03-2018-hello-world/index.md",
+      "extension": "md",
+      "size": 125,
+      "prettySize": "125 B",
+      "modifiedTime": "2018-04-05T10:30:44.870Z",
+      "accessTime": "2018-04-05T10:30:44.870Z",
+      "changeTime": "2018-04-05T10:30:44.870Z",
+      "birthTime": "2018-04-03T10:37:32.266Z",
+      "root": "/",
+      "dir": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "04-03-2018-hello-world",
+      "dev": 16777221,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 502,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 8626680360,
+      "blocks": 8,
+      "atimeMs": 1522924244869.5493,
+      "mtimeMs": 1522924244870.2034,
+      "ctimeMs": 1522924244870.2034,
+      "birthtimeMs": 1522751852265.8933,
+      "atime": "2018-04-05T10:30:44.870Z",
+      "mtime": "2018-04-05T10:30:44.870Z",
+      "ctime": "2018-04-05T10:30:44.870Z",
+      "birthtime": "2018-04-03T10:37:32.266Z"
+    },
+    "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file",
+      "internal": {
+        "content": "---\npath: '/hello-world'\ndate: '2017-07-12T17:12:33.962Z'\ntitle: 'my first blog post'\n---\n\n```javascript\nconsole.log(11);\n```",
+        "type": "MarkdownRemark",
+        "contentDigest": "1ea22e54828f55eb1ed374d91ede9c0b",
+        "owner": "gatsby-transformer-remark"
+      },
+      "frontmatter": {
+        "title": "my first blog post",
+        "path": "/hello-world",
+        "date": "2017-07-12T17:12:33.962Z",
+        "_PARENT": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file",
+        "parent": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file"
+      },
+      "excerpt": "",
+      "fileAbsolutePath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md"
+    },
+    "SitePage /hello-world": {
+      "layout": "index",
+      "jsonName": "hello-world.json",
+      "internalComponentName": "ComponentHelloWorld",
+      "path": "/hello-world",
+      "component": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/templates/blog-post.js",
+      "id": "SitePage /hello-world",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1570a00b8888d0cd32827f2fb7ad24e0",
         "owner": "internal-data-bridge"
       }
     },
@@ -405,7 +1016,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "23526cc29ebcf71486440bfb655edbc7",
+        "contentDigest": "fb00fdc609af16fb305d431c9aee5bef",
         "owner": "internal-data-bridge"
       }
     },
@@ -425,7 +1036,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5372ad00a44dcd3715e140ea0cf7dfbd",
+        "contentDigest": "034269c45dac349f244e81bb0eb59602",
         "owner": "internal-data-bridge"
       }
     },
@@ -445,7 +1056,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "955f9523507be44cc7e75ded9e7c6bfe",
+        "contentDigest": "afa09a06b9c46df1ae2a8d6da41eddef",
         "owner": "internal-data-bridge"
       }
     },
@@ -465,17 +1076,21 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "61c230a7fc0b8ed3e336a32e9c2a56c8",
+        "contentDigest": "1e99a59146bef1d9bbbd390de253e217",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "d7c38425db25438412de0dba294bd2fd"
+    "PLUGINS_HASH": "de5215415d74860e4b53864dc9564ac7"
   },
   "componentDataDependencies": {
-    "nodes": {},
+    "nodes": {
+      "/Users/kwangs/Documents/GIT/private/dalgos.github.io/src/pages/04-03-2018-hello-world/index.md absPath of file >>> MarkdownRemark": [
+        "/hello-world"
+      ]
+    },
     "connections": {
       "SitePage": [
         "/dev-404-page/"
