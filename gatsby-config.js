@@ -17,17 +17,23 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          // {
-          //   resolve: 'gatsby-remark-prismjs',
-          //   options: {
-          //     classPrefix: 'language-',
-          //     inlineCodeMarker: null,
-          //     aliases: {},
-          //   }
-          // }
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+            }
+          }
         ]
       }
     },
+    {
+      resolve: 'gatsby-plugin-postcss-sass',
+      options: {
+        precision: 8,
+      }
+    }
   ],
-  pathPrefix: '/dalgos.github.io'
+  pathPrefix: '/'
 };
