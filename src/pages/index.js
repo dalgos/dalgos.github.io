@@ -11,13 +11,15 @@ export default function Index({ data }) {
     <div className="blog-posts">
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
-        .map(({ node: post }) => {
+        .map(({ node: post }, idx) => {
           return (
             <PreviewItem
+              key={idx}
               path={post.frontmatter.path}
               title={post.frontmatter.title}
               date={post.frontmatter.date}
               excerpt={post.excerpt}
+              coverImage={post.frontmatter.coverImage}
             />
           )
         })
@@ -27,19 +29,29 @@ export default function Index({ data }) {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-          }
-        }
-      }
-    }
-  }
-`
+         query IndexQuery {
+           allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+             edges {
+               node {
+                 excerpt(pruneLength: 250)
+                 id
+                 frontmatter {
+                   title
+                   date(formatString: "MMMM DD, YYYY")
+                   path
+                  #  coverImage {
+                  #    childImageSharp {
+                  #      resolutions(width: 400) {
+                  #        width
+                  #        height
+                  #        src
+                  #        srcSet
+                  #      }
+                  #    }
+                  #  }
+                 }
+               }
+             }
+           }
+         }
+       `;
