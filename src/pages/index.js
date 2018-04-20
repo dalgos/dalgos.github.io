@@ -3,17 +3,18 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import PreviewItem from '../components/PreviewItem'
+import PostItem from '../components/PostItem'
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <div className="blog-posts">
+    <section className="posts">
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }, idx) => {
           return (
-            <PreviewItem
+            <PostItem
               key={idx}
               path={post.frontmatter.path}
               title={post.frontmatter.title}
@@ -24,7 +25,7 @@ export default function Index({ data }) {
           )
         })
       }
-    </div>
+    </section>
   )
 }
 

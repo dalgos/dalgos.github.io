@@ -15,16 +15,15 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'frontend, javascript' },
       ]}
     />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+    <div className="col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto">
+      <div className="row">
+        <Header />
+      </div>
+      <div
+        className="row"
+      >
+        {children()}
+      </div>
     </div>
   </div>
 )

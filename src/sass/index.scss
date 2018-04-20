@@ -1,6 +1,22 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../../node_modules/prismjs/themes/prism-tomorrow.css';
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+$primary-color: #7f1ae5;
+
+%titleFont {
+  font-family: 'Pacifico', cursive;
+}
 
 html, body {
-  font-family: sans-serif;
+  
+}
+
+h1.brand {
+  @extend %titleFont;
+  line-height: 2;
+}
+
+.brand {
+  color: $primary-color;
 }
