@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'oror.io',
+    title: 'createweb.app',
     author: 'dalgos'
   },
   plugins: [
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -40,7 +39,9 @@ module.exports = {
       options: {
         precision: 8,
       }
-    }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
   pathPrefix: '/'
 };
