@@ -20,7 +20,7 @@ export default function Index({ data }) {
               title={post.frontmatter.title}
               date={post.frontmatter.date}
               excerpt={post.excerpt}
-              coverImage={post.frontmatter.coverImage}
+              sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
             />
           )
         })
@@ -30,29 +30,26 @@ export default function Index({ data }) {
 }
 
 export const pageQuery = graphql`
-         query IndexQuery {
-           allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-             edges {
-               node {
-                 excerpt(pruneLength: 250)
-                 id
-                 frontmatter {
-                   title
-                   date(formatString: "MMMM DD, YYYY")
-                   path
-                  #  coverImage {
-                  #    childImageSharp {
-                  #      resolutions(width: 400) {
-                  #        width
-                  #        height
-                  #        src
-                  #        srcSet
-                  #      }
-                  #    }
-                  #  }
-                 }
-               }
-             }
-           }
-         }
-       `;
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            featuredImage {
+              childImageSharp{
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

@@ -2,7 +2,7 @@
 path: '/2018-04-18-01'
 date: '2018-04-18T10:00:00.000Z'
 title: 'Atom clean uninstall'
-coverImage: './cover.png'
+featuredImage: './cover.png'
 ---
 
 Atom에서는 별도의 uninstall 기능을 제공하고 있지 않아, 아래와 같이 직접 삭제를 해주어야 합니다.

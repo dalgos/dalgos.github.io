@@ -2,7 +2,7 @@
 path: '/2018-04-10-01'
 date: '2018-04-10T10:00:00.000Z'
 title: 'Presentational & Container Component'
-coverImage: {}
+featuredImage: './cover.png'
 ---
 # Pattern
 

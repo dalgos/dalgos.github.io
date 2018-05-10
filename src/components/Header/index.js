@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Styled from 'styled-components'
 
 const Header = () => (
   <div
@@ -10,9 +11,6 @@ const Header = () => (
       <h1 className="brand mt-5 mb-3">
         <Link
           to="/"
-          style={{
-            textDecoration: 'none',
-          }}
           className="brand"
         >
           codify

@@ -9,7 +9,7 @@ import '../sass/index.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="oror.io"
+      title="createweb.app"
       meta={[
         { name: 'description', content: 'oror.io blog' },
         { name: 'keywords', content: 'frontend, javascript' },

@@ -17,6 +17,13 @@ h1.brand {
   line-height: 2;
 }
 
+a {
+  &:hover, &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 .brand {
   color: $primary-color;
 }
