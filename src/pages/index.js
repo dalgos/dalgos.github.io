@@ -9,7 +9,7 @@ export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <section className="posts">
+    <section className="posts mt5">
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }, idx) => {

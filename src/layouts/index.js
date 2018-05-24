@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import '../sass/index.scss'
 
 
@@ -15,16 +17,15 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'frontend, javascript' },
       ]}
     />
-    <div className="col-sm-12 col-md-10 col-lg-8 col-xl-6 mx-auto">
-      <div className="row">
-        <Header />
+    <div className="fl w-100">
+      <div>
+        <Nav />
       </div>
-      <div
-        className="row"
-      >
+      <div>
         {children()}
       </div>
     </div>
+    <Footer/>
   </div>
 )
 
