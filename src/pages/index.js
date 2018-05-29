@@ -4,28 +4,32 @@ import Helmet from 'react-helmet'
 
 import PreviewItem from '../components/PreviewItem'
 import PostItem from '../components/PostItem'
+import Nav from '../components/Nav'
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <section className="posts mt5">
-      {posts
-        .filter(post => post.node.frontmatter.title.length > 0)
-        .map(({ node: post }, idx) => {
-          return (
-            <PostItem
-              key={idx}
-              path={post.frontmatter.path}
-              title={post.frontmatter.title}
-              date={post.frontmatter.date}
-              excerpt={post.excerpt}
-              sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-            />
-          )
-        })
-      }
-    </section>
+    <div>
+      <Nav/>
+      <section className="posts">
+        {posts
+          .filter(post => post.node.frontmatter.title.length > 0)
+          .map(({ node: post }, idx) => {
+            return (
+              <PostItem
+                key={idx}
+                path={post.frontmatter.path}
+                title={post.frontmatter.title}
+                date={post.frontmatter.date}
+                excerpt={post.excerpt}
+                sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+              />
+            )
+          })
+        }
+      </section>
+    </div>
   )
 }
 

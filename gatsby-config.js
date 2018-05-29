@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'createweb.app',
+    title: 'devs',
     author: 'dalgos'
   },
   plugins: [

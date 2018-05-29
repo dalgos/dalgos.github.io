@@ -4,6 +4,7 @@ import Styled from 'styled-components'
 import Img from 'gatsby-image'
 
 import '../sass/index.scss'
+import Nav from '../components/Nav'
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
   return (
@@ -22,8 +23,9 @@ export default function Template ({ data }) {
     // </div>
     <article>
       <Helmet title={`${post.frontmatter.title}`} />
-      <header className="bg-gold sans-serif pt5">
-        <div className="mw9 center pa4 pt5-ns ph7-l">
+      <Nav className="fixed"/>
+      <header className="bg-gold sans-serif">
+        <div className="mw9 center pa4 pt6-ns ph7-l">
           <time className="f6 mb2 dib ttu tracked"><small>{post.frontmatter.date}</small></time>
           <h3 className="f2 f1-m f-headline-l measure-narrow lh-title mv0">
             <span className="bg-black-90 lh-copy white pa1 tracked-tight">

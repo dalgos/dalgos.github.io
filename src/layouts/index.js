@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import '../sass/index.scss'
 
@@ -11,16 +10,13 @@ import '../sass/index.scss'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="createweb.app"
+      title="const review"
       meta={[
-        { name: 'description', content: 'oror.io blog' },
+        { name: 'description', content: 'dalgos blog' },
         { name: 'keywords', content: 'frontend, javascript' },
       ]}
     />
     <div className="fl w-100">
-      <div>
-        <Nav />
-      </div>
       <div>
         {children()}
       </div>

@@ -1,10 +1,11 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
+import * as classnames from 'classnames'
 
-export default props =>
-  <nav className="db dt-l w-100 border-box pa3 ph5-l fixed">
+export default ({ className, ...restProps }) =>
+  <nav className={classnames('db dt-l w-100 border-box pa3 ph5-l near-black', className)}>
     <Link className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" to="/" title="Home">
-      <img src="http://tachyons.io/img/logo.jpg" className="dib w2 h2 br-100" alt="Site Name" />
+      <h1 className="f3 mv0">devs</h1>
     </Link>
     <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
       <a className="link near-black hover-silver dib h2 w2 mr3" href="https://github.com/dalgos" title="GitHub">
