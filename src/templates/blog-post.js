@@ -1,7 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Styled from 'styled-components'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 import '../sass/index.scss'

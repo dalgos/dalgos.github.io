@@ -1,9 +1,7 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 
-import PreviewItem from '../components/PreviewItem'
 import PostItem from '../components/PostItem'
 import Nav from '../components/Nav'
 
