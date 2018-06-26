@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Styled from 'styled-components'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import '../sass/index.scss'
 import Nav from '../components/Nav'
@@ -51,8 +52,8 @@ export const pageQuery = graphql`
         title
         featuredImage{
           childImageSharp{
-            sizes(maxWidth: 630) {
-              ...GatsbyImageSharpSizes
+            fluid(maxWidth: 630) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

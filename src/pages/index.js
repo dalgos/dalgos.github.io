@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import { graphql } from 'gatsby'
 
 import PreviewItem from '../components/PreviewItem'
 import PostItem from '../components/PostItem'
@@ -10,26 +11,28 @@ export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <div>
-      <Nav/>
-      <section className="posts">
-        {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }, idx) => {
-            return (
-              <PostItem
-                key={idx}
-                path={post.frontmatter.path}
-                title={post.frontmatter.title}
-                date={post.frontmatter.date}
-                excerpt={post.excerpt}
-                sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-              />
-            )
-          })
-        }
-      </section>
-    </div>
+    <Layout>
+      <div>
+        <Nav/>
+        <section className="posts">
+          {posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }, idx) => {
+              return (
+                <PostItem
+                  key={idx}
+                  path={post.frontmatter.path}
+                  title={post.frontmatter.title}
+                  date={post.frontmatter.date}
+                  excerpt={post.excerpt}
+                  fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
+                />
+              )
+            })
+          }
+        </section>
+      </div>
+    </Layout>
   )
 }
 
@@ -46,8 +49,8 @@ export const pageQuery = graphql`
             path
             featuredImage {
               childImageSharp{
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 630) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

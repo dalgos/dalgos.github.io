@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'devs',
+    title: 'devlogs',
     author: 'dalgos'
   },
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-postcss-sass',
+      resolve: 'gatsby-plugin-sass',
       options: {
         precision: 8,
       }
