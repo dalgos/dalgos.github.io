@@ -4,16 +4,18 @@
   "version": "0.1.0",
   "author": "dalgos",
   "dependencies": {
-    "gatsby": "^1.9.246",
-    "gatsby-image": "^1.0.47",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-catch-links": "^1.0.19",
-    "gatsby-plugin-postcss-sass": "^1.0.19",
-    "gatsby-plugin-react-helmet": "^2.0.8",
-    "gatsby-remark-prismjs": "^1.2.24",
-    "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.39",
-    "gatsby-transformer-sharp": "^1.6.23",
+    "gatsby": "^2.0.0-beta.11",
+    "gatsby-image": "^2.0.0-beta.2",
+    "gatsby-link": "^2.0.0-beta.3",
+    "gatsby-plugin-catch-links": "^1.0.24",
+    "gatsby-plugin-postcss-sass": "^1.0.22",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-remark-prismjs": "^2.0.4",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -28,13 +30,13 @@
     "deploy": "gatsby build --prefix-paths && cp ./CNAME ./public/ && gh-pages -d public --branch master"
   },
   "devDependencies": {
-    "classnames": "^2.2.5",
-    "gatsby-plugin-sharp": "^1.6.42",
+    "classnames": "^2.2.6",
+    "gatsby-plugin-sharp": "^2.0.0-beta.2",
     "gatsby-plugin-typescript": "^1.4.20",
-    "gatsby-remark-images": "^1.5.61",
-    "gh-pages": "^1.1.0",
-    "prettier": "^1.11.1",
-    "styled-components": "^3.3.0",
-    "tachyons": "^4.9.1"
+    "gatsby-remark-images": "^1.5.67",
+    "gh-pages": "^1.2.0",
+    "prettier": "^1.13.6",
+    "styled-components": "^3.3.3",
+    "tachyons": "^4.10.0"
   }
 }
