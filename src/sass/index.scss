@@ -2,14 +2,19 @@
 @import '../../node_modules/prismjs/themes/prism-tomorrow.css';
 
 $primary-color: #7f1ae5;
+$off-green: #ebf4ec;
+$off-orange: #FE5000;
 
 html, body {
   
 }
 
 a {
+  text-decoration:  none;
+  font-weight: bolder;
+  color: $off-orange;
+
   &:hover, &:visited {
-    text-decoration: none;
     color: inherit;
   }
 }
@@ -18,8 +23,22 @@ a {
   color: $primary-color;
 }
 
+// post style
+
 // prismjs
 
 pre[class*="language-"] {
   border-radius: .5rem;
+}
+
+// background-color
+
+.bg-pastel-green {
+  background-color: $off-green;
+}
+.off-orange {
+  color: $off-orange;
+}
+.bg-off-orange {
+  background-color: $off-orange;
 }

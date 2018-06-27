@@ -13,12 +13,12 @@ export default () => (
       }
     `}
     render={data => (
-      <div className="bg-gray sans-serif bb b--gray">
+      <div className="sans-serif bb b--gray bg-pastel-green">
         <div className="mw9 center pa4 pt7-ns pb6-ns ph6-l">
           <h3 className="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-            <span className="bg-mid-gray lh-copy white pa1 tracked-tight" dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.description }}></span>
+            <span className="bg-black lh-copy white pa1 tracked-tight" dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.description }}></span>
           </h3>
-          <h4 className="f3 fw1 georgia i white-40">#javascript #react</h4>
+          <h4 className="f3 fw1 georgia i black">#javascript #react</h4>
         </div>
       </div>
     )}

@@ -23,8 +23,8 @@ export default ({ path, title, date, excerpt, sizes }) =>
     <p className="lh-copy" dangerouslySetInnerHTML={{ __html: excerpt }}>
       
     </p>
-    <div className="red dib">
-      <Link to={path} className="no-underline b">more</Link>
+    <div className="dib off-orange">
+      <Link to={path} className="no-underline b off-orange">more</Link>
     </div>
     <div className="mt2 gray">{date}</div>
   </article>

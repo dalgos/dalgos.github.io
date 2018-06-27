@@ -24,7 +24,7 @@ export default function Template ({ data }) {
     //   </div>
     // </div>
     <Layout>
-      <article className="lh-copy">
+      <article className="lh-copy _post">
         <Helmet title={`${post.frontmatter.title}`} />
 
         <ArticleHeader
