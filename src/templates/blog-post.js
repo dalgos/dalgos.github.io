@@ -1,9 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 
 import '../sass/index.scss'
 import Nav from '../components/Nav'
+import Layout from '../components/Layout'
+import ArticleHeader from '../components/ArticleHeader'
+
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
   return (
@@ -20,23 +23,19 @@ export default function Template ({ data }) {
     //     />
     //   </div>
     // </div>
-    <article>
-      <Helmet title={`${post.frontmatter.title}`} />
-      <Nav className="fixed"/>
-      <header className="bg-gold sans-serif">
-        <div className="mw9 center pa4 pt6-ns ph7-l">
-          <time className="f6 mb2 dib ttu tracked"><small>{post.frontmatter.date}</small></time>
-          <h3 className="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-            <span className="bg-black-90 lh-copy white pa1 tracked-tight">
-              {post.frontmatter.title}
-            </span>
-          </h3>
-          <h4 className="f3 fw1 georgia i">The definitive guide to the javascript tooling landscape in 2015.</h4>
-          <h5 className="f6 ttu tracked black-80">By dalgos</h5>
-        </div>
-      </header>
-      <div className="pa4 ph7-l roboto mw9-l center" dangerouslySetInnerHTML={{ __html: post.html }} />
-    </article>
+    <Layout>
+      <article className="lh-copy">
+        <Helmet title={`${post.frontmatter.title}`} />
+
+        <ArticleHeader
+          title={post.frontmatter.title}
+          date={post.frontmatter.date}
+        />
+
+        <div className="pa4 ph6-l mw9-l center" dangerouslySetInnerHTML={{ __html: post.html }} />
+
+      </article>
+    </Layout>
   )
 }
 

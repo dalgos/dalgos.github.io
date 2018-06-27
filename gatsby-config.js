@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'devlogs',
+    title: 'dev.logs',
     author: 'dalgos',
     meta: [
       { name: 'description', content: 'dalgos blog' },
       { name: 'keywords', content: 'frontend, javascript' },
-    ]
+    ],
+    description: `The Developer's Guide to the Web`
   },
   plugins: [
     'gatsby-plugin-catch-links',

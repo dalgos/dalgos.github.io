@@ -27,3 +27,9 @@ a {
 .brand {
   color: $primary-color;
 }
+
+// prismjs
+
+pre[class*="language-"] {
+  border-radius: .5rem;
+}

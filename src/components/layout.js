@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import Header from './Header'
 import Footer from '../components/Footer'
 import '../sass/index.scss'
 
@@ -23,6 +24,9 @@ export default ({ children }) => (
           meta={data.site.siteMetadata.meta}
         />
         <div className="fl w-100">
+
+          <Header/>
+          
           <div>
             {children}
           </div>

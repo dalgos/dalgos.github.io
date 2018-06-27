@@ -13,15 +13,18 @@ const Article = Styled.article`
 `
 
 export default ({ path, title, date, excerpt, sizes }) =>
-  <article className="pa3 pa5-ns">
+  <article className="pa3">
     <Link
       to={path}
       className="no-underline black"
     >
-      <h1 className="f3 f1-m f-headline-l">{title}</h1>
+      <h1 className="f1-l">{title}</h1>
     </Link>
-    <p className="measure lh-copy">
-      {excerpt}
+    <p className="lh-copy" dangerouslySetInnerHTML={{ __html: excerpt }}>
+      
     </p>
-    <div>{date}</div>
+    <div className="red dib">
+      <Link to={path} className="no-underline b">more</Link>
+    </div>
+    <div className="mt2 gray">{date}</div>
   </article>

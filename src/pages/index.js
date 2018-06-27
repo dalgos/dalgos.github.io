@@ -1,17 +1,18 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
 import PostItem from '../components/PostItem'
-import Nav from '../components/Nav'
-
+import Hero from '../components/Hero'
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
     <Layout>
-      <div>
-        <Nav/>
+
+      <Hero/>
+
+      <div className="mw7 center">
         <section className="posts">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
