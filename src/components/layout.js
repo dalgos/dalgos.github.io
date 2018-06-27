@@ -18,12 +18,12 @@ export default ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <div className="sans-serif">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={data.site.siteMetadata.meta}
         />
-        <div className="fl w-100">
+        <div className="w-100">
 
           <Header/>
           
