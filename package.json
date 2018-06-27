@@ -7,7 +7,7 @@
     "gatsby": "^2.0.0-beta.11",
     "gatsby-image": "^2.0.0-beta.2",
     "gatsby-plugin-catch-links": "^1.0.24",
-    "gatsby-plugin-postcss-sass": "^1.0.0-beta.6",
+    "gatsby-plugin-google-analytics": "^2.0.0-beta.2",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^2.0.0-beta.2",
     "gatsby-remark-prismjs": "^2.0.4",
