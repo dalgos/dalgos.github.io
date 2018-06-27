@@ -6,7 +6,7 @@ module.exports = {
       { name: 'description', content: 'dalgos blog' },
       { name: 'keywords', content: 'frontend, javascript' },
     ],
-    description: `The Developer's Guide to the Web`
+    description: `The Developer's Guide to the IDE`
   },
   plugins: [
     'gatsby-plugin-catch-links',
