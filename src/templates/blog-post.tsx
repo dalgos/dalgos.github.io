@@ -1,28 +1,14 @@
-import React from 'react'
+import * as React from 'react'
 import Helmet from 'react-helmet'
 import { graphql, StaticQuery } from 'gatsby'
 
 import '../sass/index.scss'
-import Nav from '../components/Nav'
 import Layout from '../components/Layout'
 import ArticleHeader from '../components/ArticleHeader'
 
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
   return (
-    // <div className="col">
-    //   <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes}/>
-    //   <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
-    //   <div className="blog-post">
-    //     {post.coverImage}
-    //     <PostTitle>{post.frontmatter.title}</PostTitle>
-    //     <small>{post.frontmatter.date}</small>
-    //     <div
-    //       className="blog-post-content mt-4"
-    //       dangerouslySetInnerHTML={{ __html: post.html }}
-    //     />
-    //   </div>
-    // </div>
     <Layout>
       <article className="lh-copy">
         <Helmet title={`${post.frontmatter.title}`} />
