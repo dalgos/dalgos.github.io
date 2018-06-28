@@ -29,6 +29,7 @@ export default function Template ({ data }) {
 
         <ArticleHeader
           title={post.frontmatter.title}
+          subTitle={data.site.siteMetadata.description}
           date={post.frontmatter.date}
         />
 
@@ -54,6 +55,11 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        description
       }
     }
   }

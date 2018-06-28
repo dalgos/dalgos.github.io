@@ -6,7 +6,7 @@ export interface ArticleHeaderProps {
   date?: string;
 }
 
-export default ({ title = '', subTitle = 'The Developer\'s Guide to the IDE', date }: ArticleHeaderProps) => (
+export default ({ title = '', subTitle, date }: ArticleHeaderProps) => (
   <header className="sans-serif bg-off-green">
     <div className="mw9 center pa4 pa6-ns bb b--gray">
       {date && <time className="f6 mb2 dib ttu tracked"><small>{date}</small></time>}
