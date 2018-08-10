@@ -1,4 +1,5 @@
-import React from 'react'
+import * as React from 'react'
+import Link from 'gatsby-link'
 import Styled from 'styled-components'
 
 const Container = Styled.div`
@@ -14,7 +15,13 @@ const Container = Styled.div`
   }
 `
 
-export default ({ path, title, date, excerpt, coverImage }) => (
+export interface Props {
+  title: string;
+  date: string;
+  excerpt: string;
+}
+
+export default ({ title, date, excerpt }: Props) => (
   <article className="pa3 pa5-ns">
     <h1 className="f3 f1-m f-headline-l">{title}</h1>
     <p className="measure lh-copy">

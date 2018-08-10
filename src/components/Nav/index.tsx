@@ -2,6 +2,8 @@ import * as React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import * as classnames from 'classnames'
 
+import Logo from '../Logo'
+
 export default ({ className, ...restProps }) => (
   <StaticQuery
     query={graphql`
