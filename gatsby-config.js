@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'dev.logs',
+    title: 'CreateWeb.App',
     author: 'dalgos',
     meta: [
       { name: 'description', content: 'dalgos blog' },
       { name: 'keywords', content: 'frontend, javascript' },
     ],
-    description: `The Developer's Guide to the Web`
+    description: `The Developer's Guide to the IDE`
   },
   plugins: [
     'gatsby-plugin-catch-links',
@@ -47,7 +47,14 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-121406525-1',
+        head: false,
+      }
+    }
   ],
   pathPrefix: '/'
 };

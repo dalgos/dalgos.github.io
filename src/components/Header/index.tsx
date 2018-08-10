@@ -16,14 +16,14 @@ export default () => (
     `}
     render={({ site }) => (
       <div
-        className="pa4-l pa3"
+        className="pa4-l pa3 bg-off-green"
       >
         <Link
           to="/"
-          className="no-underline dib"
+          className="no-underline dib black"
         >
           <h1
-            className="f3 mv0"
+            className="f4 f3-l mv0"
           >
             {/*<Logo
               size="26px"

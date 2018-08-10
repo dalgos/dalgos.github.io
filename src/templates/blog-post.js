@@ -24,11 +24,12 @@ export default function Template ({ data }) {
     //   </div>
     // </div>
     <Layout>
-      <article className="lh-copy">
+      <article className="lh-copy _post">
         <Helmet title={`${post.frontmatter.title}`} />
 
         <ArticleHeader
           title={post.frontmatter.title}
+          subTitle={data.site.siteMetadata.description}
           date={post.frontmatter.date}
         />
 
@@ -54,6 +55,11 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        description
       }
     }
   }
