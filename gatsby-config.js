@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'dev.logs',
+    title: 'CreateWeb.App',
     author: 'dalgos',
     meta: [
       { name: 'description', content: 'dalgos blog' },
