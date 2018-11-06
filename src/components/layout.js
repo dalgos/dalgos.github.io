@@ -18,7 +18,7 @@ export default ({ children }) => (
       }
     `}
     render={data => (
-      <div className="sans-serif">
+      <div>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={data.site.siteMetadata.meta}

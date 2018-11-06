@@ -12,7 +12,7 @@ export default function Index({ data }) {
 
       <Hero/>
 
-      <div className="mw7 ph3 center">
+      <div className="mw7 pv5 ph3 center">
         <section className="posts">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
@@ -24,7 +24,6 @@ export default function Index({ data }) {
                   title={post.frontmatter.title}
                   date={post.frontmatter.date}
                   excerpt={post.excerpt}
-                  fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
                 />
               )
             })

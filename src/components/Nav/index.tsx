@@ -16,7 +16,7 @@ export default ({ className, ...restProps }) => (
       }
     `}
     render={data => (
-      <nav className={classnames('db dt-l w-100 border-box pa3 ph5-l near-black', className)}>
+      <nav className={classnames('db dt-l w-100 border-box pa3 ph5-l near-black transparent', className)} style={{ zIndex: '1000' }}>
         <Link className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" to="/" title="Home">
           <h1 className="f3 mv0 black">{data.site.siteMetadata.title}</h1>
         </Link>

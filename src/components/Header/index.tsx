@@ -16,14 +16,15 @@ export default () => (
     `}
     render={({ site }) => (
       <div
-        className="pa4-l pa3 bg-off-green"
+        className="pa4-l pa3 bg-off-green transparent absolute w-100"
+        style={{ zIndex: 1000 }}
       >
         <Link
           to="/"
-          className="no-underline dib black"
+          className="no-underline dib white"
         >
           <h1
-            className="f4 f3-l mv0"
+            className="f4 f4-l mv0"
           >
             {/*<Logo
               size="26px"
