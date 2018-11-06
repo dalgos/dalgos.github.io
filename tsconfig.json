@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
     "module": "commonjs",
-    "jsx": "react"
+    "jsx": "react",
+    "jsxFactory": "React.createElement"
   },
   "exclude": [
     "node_modules"
