@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Varela+Round&subset=korean');
 @import '../../node_modules/tachyons/css/tachyons.css';
 @import '../../node_modules/prismjs/themes/prism-tomorrow.css';
 
 $primary-color: #7f1ae5;
 $off-green: #ebf4ec;
 $off-orange: #FE5000;
+$steel: rgba(35, 37, 40, 1);
+$black: #393c42;
+$white: #ffffff;
 
 html, body {
+  font-family: 'Varela Round', 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  line-height: 1;
+  color: $white;
+  background-color: $black;
 }
 
 a {
@@ -40,4 +51,11 @@ pre[class*="language-"] {
 }
 .bg-off-orange {
   background-color: $off-orange;
+}
+.text-white {
+  color: $white;
+}
+
+.transparent {
+  background: 0 0;
 }

@@ -8,6 +8,7 @@ import ArticleHeader from '../components/ArticleHeader'
 
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
+  console.log(data.frontmatter)
   return (
     <Layout>
       <article className="lh-copy _post">
@@ -17,6 +18,7 @@ export default function Template ({ data }) {
           title={post.frontmatter.title}
           subTitle={data.site.siteMetadata.description}
           date={post.frontmatter.date}
+          fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
         />
 
         <div className="pa4 ph6-l mw9-l center" dangerouslySetInnerHTML={{ __html: post.html }} />

@@ -12,13 +12,13 @@ const Article = Styled.article`
   }
 `
 
-export default ({ path, title, date, excerpt, sizes }) =>
+export default ({ path, title, date, excerpt }) =>
   <article className="pa3">
     <Link
       to={path}
       className="no-underline black"
     >
-      <h1 className="f1-l">{title}</h1>
+      <h1 className="f1-l white">{title}</h1>
     </Link>
     <p className="lh-copy" dangerouslySetInnerHTML={{ __html: excerpt }}>
       
