@@ -2,13 +2,12 @@ import * as React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import * as classnames from 'classnames'
 
-import Logo from '../Logo'
+const NavLink: React.SFC<{ to: string; title: string; text: string; }> =
+  ({ to = '#', title = '', text = '' }) => (
+    <Link className="link white dim f6 f5-l dib mr3 mr4-l" to={to} title={title}>{text}</Link>
+  )
 
-const NavLink: React.SFC<{ to: string; title: string; text: string; }> = ({ to = '#', title = '', text = '' }) => (
-  <Link className="link white dim f6 f5-l dib mr3 mr4-l" to={to} title={title}>{text}</Link>
-)
-
-const Nav: React.SFC<React.HTMLProps<HTMLDivElement>> = ({ className, ...restProps }) => (
+const Nav: React.SFC<React.HTMLProps<HTMLDivElement>> = ({ className }) => (
   <StaticQuery
     query={graphql`
       query NavQuery {
@@ -25,8 +24,8 @@ const Nav: React.SFC<React.HTMLProps<HTMLDivElement>> = ({ className, ...restPro
           <h1 className="f3 mv0 white">{data.site.siteMetadata.title}</h1>
         </Link>
         <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-          <NavLink to="/" title="Home" text="Home" />
-          <NavLink to="/about" title="About" text="About" />
+          {/* <NavLink to="/" title="Home" text="Home" /> */}
+          {/* <NavLink to="/about" title="About" text="About" /> */}
         </div>
       </nav>
     )}
