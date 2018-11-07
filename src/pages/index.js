@@ -3,20 +3,26 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 
 import PostItem from '../components/PostItem'
-import Hero from '../components/Hero'
+import ProfileHero from '../components/ProfileHero'
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
+  // const { edges: posts } = data.allMarkdownRemark
+  const [ headline, ...restPosts ] =
+    data.allMarkdownRemark.edges
+      .map(({ node }) => node)
+      .filter(node => node.frontmatter.title.length > 0)
 
   return (
     <Layout>
 
-      <Hero/>
+      <ProfileHero
+        title={headline.frontmatter.title}
+        excerpt={headline.excerpt}
+        path={headline.frontmatter.path}
+      />
 
       <div className="mw7 pv5 ph3 center">
         <section className="posts">
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }, idx) => {
+          {restPosts.map((post, idx) => {
               return (
                 <PostItem
                   key={idx}
