@@ -32,7 +32,7 @@ export default ({ children }) => (
             {children}
           </div>
         </div>
-        <Footer/>
+        <Footer title={data.site.siteMetadata.title}/>
       </div>
     )}
   />
