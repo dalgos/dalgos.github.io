@@ -8,7 +8,6 @@ import ArticleHeader from '../components/ArticleHeader'
 
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
-  console.log(data.frontmatter)
   return (
     <Layout>
       <article className="lh-copy _post">
