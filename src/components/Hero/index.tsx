@@ -26,7 +26,7 @@ export default () => (
       }
     `}
     render={data => (
-      <Wrapper>
+      <Wrapper className="w-100">
         <div className="mw9 center pa4 pv6-ns ph6-l">
           <h3 className="f-headline-l f1-m measure-narrow lh-title mv0">
             <span className="bg-black lh-copy white pa1 tracked-tight" dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.description }}></span>

@@ -8,7 +8,7 @@ export interface ArticleHeaderProps {
   date?: string;
 }
 
-const Wrapper = styled.header`
+const Wrapper = styled<{ dataURI: string }, any>('header')`
   position: relative;
   padding-top: 4rem;
   z-index: 1;

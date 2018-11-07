@@ -8,6 +8,7 @@ $off-orange: #FE5000;
 $steel: rgba(35, 37, 40, 1);
 $black: #393c42;
 $white: #ffffff;
+$mud: #3B3838;
 
 html, body {
   font-family: 'Varela Round', 'Noto Sans KR', sans-serif;
@@ -54,6 +55,9 @@ pre[class*="language-"] {
 }
 .text-white {
   color: $white;
+}
+.text-mud {
+  color: $mud;
 }
 
 .transparent {
