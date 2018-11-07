@@ -21,7 +21,7 @@ export default function Template ({ data }) {
           fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
         />
 
-        <div className="pa4 ph6-l mw9-l center" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="pa4 ph6-l mw9 mw8-l center" dangerouslySetInnerHTML={{ __html: post.html }} />
 
       </article>
     </Layout>
