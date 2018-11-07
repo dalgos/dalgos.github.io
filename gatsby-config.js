@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'CreateWeb.App',
+    title: 'cwa',
     author: 'dalgos',
     meta: [
       { name: 'description', content: 'dalgos blog' },
       { name: 'keywords', content: 'frontend, javascript' },
     ],
-    description: `The Developer's Guide to the IDE`
+    description: `Advanced Frontend Engineer`
   },
   plugins: [
     'gatsby-plugin-catch-links',

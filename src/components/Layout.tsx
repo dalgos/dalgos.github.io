@@ -1,9 +1,10 @@
-import React from 'react'
+import * as React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './Header'
-import Footer from '../components/Footer'
+import Nav from './Nav'
+import Footer from './Footer'
 import '../sass/index.scss'
 
 export default ({ children }) => (
@@ -25,7 +26,7 @@ export default ({ children }) => (
         />
         <div className="w-100">
 
-          <Header/>
+          <Nav/>
           
           <div>
             {children}
