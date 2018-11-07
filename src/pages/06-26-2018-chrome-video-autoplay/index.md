@@ -2,7 +2,7 @@
 path: '/2018-06-26-01'
 date: '2018-06-26T10:00:00.000Z'
 title: 'Chrome Autoplay Policy Changes'
-featuredImage: './cover.png'
+featuredImage: './cover.jpg'
 ---
 
 현재 라이브 동영상을 재생하는 컴포넌트를 관리하고 있습니다. 최근 크롬에서 자동재생이 정상적으로 이뤄지지 않는 이슈가 발생하여 살펴보니, 아래와 같은 이슈가 있었더군요.
