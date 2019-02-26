@@ -10,18 +10,20 @@ export default function Template ({ data }) {
   const { markdownRemark: post } = data
   return (
     <Layout>
+      <Helmet title={`${post.frontmatter.title}`} />
       <article className="lh-copy _post">
-        <Helmet title={`${post.frontmatter.title}`} />
 
-        <ArticleHeader
+        {/* <ArticleHeader
           title={post.frontmatter.title}
           subTitle={data.site.siteMetadata.description}
           date={post.frontmatter.date}
           fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
-        />
+        /> */}
+        <header>
+          <h1 className="f1-l f2 lh-title mb5" style={{ letterSpacing: '-0.05rem' }}>{post.frontmatter.title}</h1>
+        </header>
 
-        <div className="pa4 ph6-l mw9 mw8-l center" dangerouslySetInnerHTML={{ __html: post.html }} />
-
+        <div className="" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
     </Layout>
   )

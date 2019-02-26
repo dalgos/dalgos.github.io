@@ -14,14 +14,15 @@ export default function Index({ data }) {
   return (
     <Layout>
 
-      <ProfileHero
+      {/* <ProfileHero
         title={headline.frontmatter.title}
         excerpt={headline.excerpt}
         path={headline.frontmatter.path}
-      />
+      /> */}
 
       <div className="mw7 pv5 ph3 center">
         <section className="posts">
+          <h3 className="f4 lh-copy">Latest Articles</h3>
           {restPosts.map((post, idx) => {
               return (
                 <PostItem
