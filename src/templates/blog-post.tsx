@@ -5,6 +5,8 @@ import { graphql, StaticQuery } from 'gatsby'
 import '../sass/index.scss'
 import Layout from '../components/Layout'
 import ArticleHeader from '../components/ArticleHeader'
+import EntryHeader from '../components/EntryHeader'
+
 
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
@@ -19,11 +21,9 @@ export default function Template ({ data }) {
           date={post.frontmatter.date}
           fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
         /> */}
-        <header>
-          <h1 className="f1-l f2 lh-title mb5" style={{ letterSpacing: '-0.05rem' }}>{post.frontmatter.title}</h1>
-        </header>
+        <EntryHeader title={post.frontmatter.title} />
 
-        <div className="" dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
     </Layout>
   )

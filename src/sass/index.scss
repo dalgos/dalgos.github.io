@@ -5,6 +5,7 @@
 $primary-color: #7f1ae5;
 $off-green: #ebf4ec;
 $off-orange: #FE5000;
+$ultra-violet: #590098;
 $steel: rgba(35, 37, 40, 1);
 $black: #393c42;
 $white: #ffffff;
@@ -16,14 +17,30 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
   line-height: 1;
-  color: $white;
-  background-color: $black;
+}
+
+.page {
+  &.light {
+    color: $black;
+    background-color: $white;
+  }
+  &.dark {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.nav {
+  transition: transform .3s ease-in-out;
+  &.unpinned {
+    transform: translateY(-100%);
+  }
 }
 
 a {
   text-decoration:  none;
   font-weight: bolder;
-  color: $off-orange;
+  color: $ultra-violet;
 
   &:hover, &:visited {
     color: inherit;
@@ -69,4 +86,31 @@ pre[class*="language-"] {
 
 .profile-hero-cover {
   background-image: url(../assets/imgs/profile_hero_cover_obouov_c_scale,w_1400.jpg);
+}
+
+.ball {
+  width: 1rem;
+  height: 1rem;
+  display:inline-block;
+  background-color: $ultra-violet;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid $ultra-violet;
+  &.active {
+    background-color: $white;
+  }
+}
+
+.transition-opacity {
+  transition: opacity .3s ease-in-out;
+  &.show {
+    opacity: 1;
+  }
+}
+
+article {
+  hr {
+    border: 0;
+    overflow: hidden;
+  }
 }
