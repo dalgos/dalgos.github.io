@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700|Varela+Round&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import '../../node_modules/tachyons/css/tachyons.css';
-@import '../../node_modules/prismjs/themes/prism-tomorrow.css';
+@import './prism-atom-dark.css';
 
 $primary-color: #7f1ae5;
 $off-green: #ebf4ec;
@@ -12,7 +12,7 @@ $white: #ffffff;
 $mud: #3B3838;
 
 html, body {
-  font-family: 'Varela Round', 'Noto Sans KR', sans-serif;
+  font-family: sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;

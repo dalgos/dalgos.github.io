@@ -6,7 +6,7 @@ import PostItem from '../components/PostItem'
 import ProfileHero from '../components/ProfileHero'
 export default function Index({ data }) {
   // const { edges: posts } = data.allMarkdownRemark
-  const [ headline, ...restPosts ] =
+  const posts =
     data.allMarkdownRemark.edges
       .map(({ node }) => node)
       .filter(node => node.frontmatter.title.length > 0)
@@ -23,7 +23,7 @@ export default function Index({ data }) {
       <div className="mw7 pv5 ph3 center">
         <section className="posts">
           <h3 className="f4 lh-copy">Latest Articles</h3>
-          {restPosts.map((post, idx) => {
+          {posts.map((post, idx) => {
               return (
                 <PostItem
                   key={idx}
