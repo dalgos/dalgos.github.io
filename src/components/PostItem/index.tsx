@@ -8,7 +8,7 @@ export default ({ path, title, date, excerpt }) => (
     <h2>
       <Link
         to={path}
-        className="f4 fw4 white"
+        className="f4 fw4 black"
       >
         {title}
       </Link>

@@ -70,7 +70,7 @@ const Nav: React.SFC<React.HTMLProps<HTMLDivElement>> = ({ className }) => {
           <nav className={classnames('db dt-l w-100 pa3 ph5-l fixed top-0 nav bg-white', className, { unpinned: isUnpinned })} style={{ zIndex: 1000 }}>
             <div className={classnames('w-100 w-10-l mb0-l dib-l', { 'mb3': isMenuToggled })}>
               <h1 className="f4 f3-ns mv0 dib fw1 w-10-l w-50">
-                <Link className="db dtc-l v-mid link dim w-100 w-10-l tl-l" to="/" title="Home">
+                <Link className="db black dtc-l v-mid link dim w-100 w-10-l tl-l" to="/" title="Home">
                   {data.site.siteMetadata.title}
                 </Link>
               </h1>
