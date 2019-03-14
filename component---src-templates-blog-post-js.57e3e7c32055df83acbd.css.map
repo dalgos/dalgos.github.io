@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/sass/index.scss"],"names":[],"mappings":"AAAA,kBAAkB,qBAAqB,cAAc,OAAO,cAAc,sBAAsB,oB","file":"component---src-templates-blog-post-js.57e3e7c32055df83acbd.css","sourcesContent":["a:hover,a:visited{text-decoration:none;color:inherit}.brand{color:#7f1ae5}pre[class*=language-]{border-radius:.5rem}"],"sourceRoot":""}
