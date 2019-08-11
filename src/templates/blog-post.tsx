@@ -6,10 +6,33 @@ import '../sass/index.scss'
 import Layout from '../components/Layout'
 import ArticleHeader from '../components/ArticleHeader'
 import EntryHeader from '../components/EntryHeader'
+import Pager from '../components/Pager'
 
+interface Node {
+  excerpt: string;
+  fields: {
+    slug: string;
+  };
+  frontmatter: {
+    data: string;
+    path: string;
+    title: string;
+  };
+  html: string;
+  id: string;
+}
 
-export default function Template ({ data }) {
+interface Props {
+  data: any;
+  pageContext: {
+    previous?: Node;
+    next?: Node;
+  }
+}
+
+export default function Template ({ data, pageContext }: Props) {
   const { markdownRemark: post } = data
+  console.log(data)
   return (
     <Layout>
       <Helmet title={`${post.frontmatter.title}`} />
@@ -25,6 +48,11 @@ export default function Template ({ data }) {
 
         <div className="post" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
+
+      <Pager
+        next={pageContext.next}
+        previous={pageContext.previous}
+      />
     </Layout>
   )
 }
