@@ -1,7 +1,7 @@
 {
   "name": "dalgos.github.io",
   "description": "devlog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "dalgos",
   "dependencies": {
     "gatsby": "^2.13.52",
