@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-blog-list-tsx","path":"/blog/21","webpackCompilationHash":"","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"fields":{"slug":"/04-10-2018-hi-gatsby/"},"frontmatter":{"title":"Presentational & Container Component"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":false,"limit":1,"skip":2,"numPages":3,"currentPage":3}}}
