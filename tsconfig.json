@@ -9,7 +9,10 @@
     "target": "es6",
     "baseUrl": "./src",
     "sourceMap": true,
-    "esModuleInterop":true
+    "esModuleInterop":true,
+    "types": [
+      "node"
+    ]
   },
   "exclude": [
     "node_modules"
