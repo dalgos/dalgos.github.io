@@ -4,10 +4,12 @@
     "alwaysStrict": true,
     "module": "commonjs",
     "jsx": "react",
-    "jsxFactory": "React.createElement",
     "moduleResolution": "node",
     "pretty": true,
     "target": "es6",
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "esModuleInterop":true
   },
   "exclude": [
     "node_modules"
