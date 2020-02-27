@@ -77,7 +77,7 @@ const Code = ({
   metastring = ``,
   ...props
 }: CodeProps) => {
-  const showLineNumbers = true
+  const showLineNumbers = false
 
   const [language, { title = `` }] = getParams(blockClassName)
   const shouldHighlightLine = calculateLinesToHighlight(metastring)
