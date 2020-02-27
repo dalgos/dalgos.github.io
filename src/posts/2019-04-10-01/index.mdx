@@ -1,5 +1,5 @@
 ---
-path: '/2018-04-10-01'
+path: /presentational-container
 date: '2018-04-10T10:00:00.000Z'
 title: 'Presentational & Container Component'
 featuredImage: './cover.png'
@@ -14,9 +14,7 @@ featuredImage: './cover.png'
 
 > Container Components 로 부터 전달받은 데이터를 바탕으로 렌더링을 수행합니다.
 
-TodoList.jsx
-
-```jsx
+```jsx:title=TodoList.jsx
 export default TodoList = props =>{
   return (
     {props.lists.map(list => <li>{list.title} - {list.isComplete}</li>)}
@@ -30,9 +28,7 @@ export default TodoList = props =>{
 
 > Container Components는 데이터를 가져와서(fetching) 해당 하위 구성요소를 렌더링합니다.
 
-Todo.jsx
-
-```jsx
+```jsx:title=Todo.jsx
 import TodoList from './TodoList'
 
 export default class Todo extends React.Component {
