@@ -32,7 +32,7 @@ export default function Index({ data: { allMdx } }) {
 
 export const recentPostQuery = graphql`
   query RecentPostsQuery {
-    allMdx(limit: 5) {
+    allMdx(limit: 5, sort: { fields: frontmatter___date, order: DESC }) {
       edges {
         node {
           fields {
