@@ -16,6 +16,7 @@ module.exports = {
       options: {
         defaultLayouts: {
           default: require.resolve('./src/components/Layout.tsx'),
+          posts: require.resolve('./src/components/PostLayout.tsx'),
         }
       },
     },
