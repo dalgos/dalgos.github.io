@@ -29,6 +29,7 @@ export default ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={data.site.siteMetadata.meta}
         />
+        <Header/>
         <Nav/>
         <Content id="content" className="mw7 pv6-l pv5 ph5-l ph3">
           <div id="primary" className="w-100">
